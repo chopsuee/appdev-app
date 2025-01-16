@@ -74,7 +74,7 @@ export default function UploadScreen() {
                 <TouchableOpacity style={styles.IconPadding}>
                   <MaterialCommunityIcons
                     name="image-multiple-outline"
-                    size={20}
+                    size={ 20 }
                     color={"#878787"}
                   />
                 </TouchableOpacity>
