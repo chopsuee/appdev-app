@@ -51,12 +51,12 @@ function ForYou() {
             />
             <View className="flex flex-col ml-5">
               <View className="flex flex-row ">
-                <Text className=" text-white font-bold">Kenneth Hular </Text>
+                <Text className=" text-white font-bold">Christian Louie</Text>
 
                 {/* Status indicator */}
                 <Text className="pl-2 pr-2">
                   <MaterialCommunityIcons
-                    name="image-multiple-outline"
+                    name="notebook"
                     size={15}
                     color={"#878787"}
                   />
@@ -89,6 +89,8 @@ function ForYou() {
               </View>
             </View>
           </View>
+
+          
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
