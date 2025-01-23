@@ -51,12 +51,20 @@ function ForYou() {
             />
             <View className="flex flex-col ml-5">
               <View className="flex flex-row ">
+<<<<<<< HEAD
                 <Text className=" text-white font-bold">Christian Louie</Text>
+=======
+                <Text className=" text-white font-bold">Kenneth Hular </Text>
+>>>>>>> bc77428bb46a520af69b8b0d2f31fb1f99255d11
 
                 {/* Status indicator */}
                 <Text className="pl-2 pr-2">
                   <MaterialCommunityIcons
+<<<<<<< HEAD
                     name="notebook"
+=======
+                    name="image-multiple-outline"
+>>>>>>> bc77428bb46a520af69b8b0d2f31fb1f99255d11
                     size={15}
                     color={"#878787"}
                   />
@@ -89,8 +97,11 @@ function ForYou() {
               </View>
             </View>
           </View>
+<<<<<<< HEAD
 
           
+=======
+>>>>>>> bc77428bb46a520af69b8b0d2f31fb1f99255d11
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
