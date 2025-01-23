@@ -28,7 +28,7 @@ function TopTabScreen() {
       }}
     >
       <TopTab.Screen name="For You" component={ForYou} />
-      <TopTab.Screen name="Following" component={Following} />
+      <TopTab.Screen name="Buddy" component={Following} />
     </TopTab.Navigator>
   );
 }
@@ -39,7 +39,6 @@ function ForYou() {
   const toggleLike = () => {
     setLike(like === "heart-outline" ? "heart" : "heart-outline");
   };
-
 
   return (
     <SafeAreaProvider>
@@ -69,10 +68,9 @@ function ForYou() {
 
               {/* Uploaded post */}
               <Text className="text-white max-w-[60vw] ml-2" numberOfLines={10}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea est
-                voluptates omnis eaque illum, aperiam ut mollitia voluptatum
-                debitis voluptatibus quo ullam alias asperiores dolorum quos non
-                tempore quasi praesentium.
+                Sinigang Mix. Paminta, luya Bawang ,sibuyas Kamatis , suka
+                OWWRIGHT OWWRIGHT Chippy , tattoos Bangus , Tilapia Chichip ,
+                Boy Bawang Tochitos , Fita OWWRIIGHT OWWRIIGHT
               </Text>
 
               {/* Like/Comment/Whatever */}

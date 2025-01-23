@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Feather';
 import IndexLayout from ".";
 import UploadScreen from "./upload";
 import { View } from "react-native";
+import ExpoloreScreen from "./explore";
 
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -36,9 +37,23 @@ function BottomTabScreen() {
       />
       
       <BottomTab.Screen
-        name="find"
-        component={IndexLayout} // Showing the TopTabScreen component here
+        name="Explore"
+        component={ExpoloreScreen} // Showing the TopTabScreen component here
         options={{
+
+          headerShown: true,
+          headerStyle: {
+            height: 60, // Adjust the height as needed (default is usually ~80)
+            backgroundColor: "#313131", // Optional: Match header background to your theme
+        
+          },
+          headerTitleStyle: {
+            fontSize: 20, // Adjust font size
+            color: "#ffffff", // Optional: Set title color
+            lineHeight: 20,
+            paddingBottom: 10
+            // textAlignVertical: "center", // Center text vertically
+          },
           tabBarLabelStyle: { display: 'none' }, // Hide label for the icon
           tabBarIcon: ({ color, size }) => (
             <Icon name="search" color={color} size={size} /> // Home icon
