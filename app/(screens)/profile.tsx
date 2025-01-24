@@ -55,9 +55,7 @@ export function Home() {
     return (
 <SafeAreaProvider>
     <SafeAreaView className="flex-1 bg-[#171717]">
-           <ScrollView className="p-5">
            <HomeCard/>
-            </ScrollView> 
     </SafeAreaView>
 </SafeAreaProvider>
     );

@@ -5,6 +5,7 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 import { FlatList } from 'react-native'
 import exploreData from '@/assets/data/exploredata'
 import { useState } from 'react'
+
 export default function PostCard() {
       const [like, setLike] = useState("heart-outline");
     
