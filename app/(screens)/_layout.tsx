@@ -10,6 +10,7 @@ import NotificationScreen from "./notification";
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 import { Platform } from "react-native";
+import ProfileScreen from "./profile";
 
 function BottomTabScreen() {
   return (
@@ -81,30 +82,33 @@ function BottomTabScreen() {
         }}
       />
 
-      <BottomTab.Screen
-        name="Notification"
-        component={NotificationScreen}
-        options={{
-          headerShown: true,
-          headerStyle: {
-            height: 60, // Keep header height consistent
-            backgroundColor: "#313131",
-          },
-          headerTitleStyle: {
-            fontSize: 18, // Slightly smaller font for better fit
-            color: "#ffffff",
-            paddingBottom: Platform.OS === "ios" ? 6 : 10, // Adjust for iOS if needed
-          },
-          tabBarLabelStyle: { display: "none" }, // Hide the tab bar label
-          tabBarIcon: ({ color, size }) => (
-            <Icon name="bell" color={color} size={size} />
-          ),
-        }}
-      />
+<BottomTab.Screen
+  name="Notification"
+  component={NotificationScreen}
+  options={{
+    headerShown: true,
+    headerStyle: {
+      paddingTop: 0,
+      height: 60,
+      backgroundColor: "#313131",
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    headerTitleStyle: {
+      fontSize: 18,
+      color: "#ffffff",
+    },
+
+    tabBarLabelStyle: { display: "none" },
+    tabBarIcon: ({ color, size }) => (
+      <Icon name="bell" color={color} size={size} />
+    ),
+  }}
+/>
 
       <BottomTab.Screen
         name="Profile"
-        component={IndexLayout} // Showing the TopTabScreen component here
+        component={ProfileScreen} // Showing the TopTabScreen component here
         options={{
           tabBarLabelStyle: {
             display: "none",
