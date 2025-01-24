@@ -41,17 +41,21 @@ function BottomTabScreen() {
         options={{
           headerShown: true,
           headerStyle: {
-            height: 60, // Keep header height consistent
+            paddingTop: 0,
+            height: 60,
             backgroundColor: "#313131",
+            alignItems: 'center',
+            justifyContent: 'center',
           },
           headerTitleStyle: {
-            fontSize: 18, // Slightly smaller font for better fit
+            fontSize: 18,
             color: "#ffffff",
-            paddingBottom: Platform.OS === "ios" ? 6 : 10, // Adjust for iOS if needed
+            top: -10
           },
-          tabBarLabelStyle: { display: "none" }, // Hide label for the icon
+      
+          tabBarLabelStyle: { display: "none" },
           tabBarIcon: ({ color, size }) => (
-            <Icon name="search" color={color} size={size} /> // Home icon
+            <Icon name="bell" color={color} size={size} />
           ),
         }}
       />
@@ -62,22 +66,21 @@ function BottomTabScreen() {
         options={{
           headerShown: true,
           headerStyle: {
-            height: 60, // Keep header height consistent
+            paddingTop: 0,
+            height: 60,
             backgroundColor: "#313131",
+            alignItems: 'center',
+            justifyContent: 'center',
           },
           headerTitleStyle: {
-            fontSize: 18, // Slightly smaller font for better fit
+            fontSize: 18,
             color: "#ffffff",
-            paddingBottom: Platform.OS === "ios" ? 6 : 10, // Adjust for iOS if needed
+            top: -10
           },
-          tabBarStyle: {
-            backgroundColor: "#171717",
-            justifyContent: "center", // Ensure content is centered
-            alignItems: "center",
-          },
-          tabBarLabelStyle: { display: "none" }, // Hide label for the icon
+      
+          tabBarLabelStyle: { display: "none" },
           tabBarIcon: ({ color, size }) => (
-            <Icon name="plus" color={color} size={size} />
+            <Icon name="bell" color={color} size={size} />
           ),
         }}
       />
@@ -97,6 +100,7 @@ function BottomTabScreen() {
     headerTitleStyle: {
       fontSize: 18,
       color: "#ffffff",
+      top: -10
     },
 
     tabBarLabelStyle: { display: "none" },
