@@ -13,8 +13,24 @@ import React from "react";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import { useState } from "react";
 
+export const userpost= [
+  {
+    upload_text: "",
+  }
+]
 export default function UploadScreen() {
+
   const [color, setColor] = useState("dark");
+  const[Inputtext, setInput] = useState("");
+
+  const handleAddPost= () => {
+    if(Inputtext.trim())
+      //Append new data to userpost
+    userpost.push({upload_text: Inputtext});
+    console.log("Updated userpost:", userpost)
+    setInput("");
+  }
+
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <SafeAreaView className="flex-1 bg-[#171717]">
@@ -68,6 +84,8 @@ export default function UploadScreen() {
                 style={{
                   textAlignVertical: "top", // Makes text start from top
                 }}
+                value={Inputtext}
+                onChangeText={(text) => setInput(text)}
               />
             
             <View className="flex flex-row ">
@@ -76,13 +94,15 @@ export default function UploadScreen() {
                     name="image-multiple-outline"
                     size={ 20 }
                     color={"#878787"}
+                    
                   />
                 </TouchableOpacity>
+
               </View>
 
               {/* Button with fixed width - centered */}
               <View className="flex justify-start mt-5">
-                <TouchableOpacity className="bg-[#0a0a0a] rounded p-2 w-24">
+                <TouchableOpacity className="bg-[#0a0a0a] rounded p-2 w-24" onPress={handleAddPost}>
                   <Text className="text-center text-white">Post</Text>
                 </TouchableOpacity>
               </View>

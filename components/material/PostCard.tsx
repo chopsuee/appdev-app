@@ -35,7 +35,7 @@ export default function PostCard() {
                 {/* Status indicator */}
                 <Text className="pl-2 pr-2">
                   <MaterialCommunityIcons
-                    name="notebook"
+                    name={item.icon}
                     size={15}
                     color={"#878787"}
                   />

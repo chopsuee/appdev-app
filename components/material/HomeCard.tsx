@@ -35,8 +35,9 @@ export default function HomeCard() {
 
         {/* Uploaded post */}
         <Text className="text-white max-w-[60vw] ml-2 mt-2" numberOfLines={10}>
-          Ilaga mo ang kamote Bumuli ka na ng asukal na pula magluluto ng kamite
-          cue para tayo ay may food trip mamaya
+          Sinigang Mix. Paminta, luya Bawang ,sibuyas Kamatis , suka OWWRIGHT
+          OWWRIGHT Chippy , tattoos Bangus , Tilapia Chichip , Boy Bawang
+          Tochitos , Fita OWWRIIGHT OWWRIIGHT
         </Text>
 
         {/* Like/Comment/Whatever */}
