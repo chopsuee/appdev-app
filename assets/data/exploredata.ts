@@ -1,5 +1,6 @@
 const exploreData = [
-    {
+    {   
+        type: "explore",
         id: 1,
         name: "Kenneth",
         desc: "Student",
@@ -7,6 +8,7 @@ const exploreData = [
         image: require("@/assets/images/explore-profile/kenneth.jpg"),
     },
     {
+        type: "explore",
         id: 2,
         name: "Louie",
         desc: "Student",
@@ -14,6 +16,7 @@ const exploreData = [
         image: require("@/assets/images/explore-profile/louie.jpg"),
     },
     {   
+        type: "explore",
         id: 3,
         name: "Iryll",
         desc: "Student",
@@ -21,6 +24,7 @@ const exploreData = [
         image: require("@/assets/images/explore-profile/iryll.jpg"),
     },
     {   
+        type: "explore",
         id: 4,
         name: "Marc",
         desc: "Student",
@@ -37,6 +41,7 @@ const exploreData = [
     },
 
     {   
+        type: "explore",
         id: 6,
         name: "Kyle",
         desc: "Student",
