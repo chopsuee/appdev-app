@@ -52,7 +52,7 @@ export function ForYou() {
             />
             <View className="flex flex-col ml-5">
               <View className="flex flex-row ">
-                <Text className=" text-white font-bold">Christian Louie</Text>
+                <Text className=" text-white font-bold">Raaaah</Text>
 
                 {/* Status indicator */}
                 <Text className="pl-2 pr-2">
@@ -90,8 +90,6 @@ export function ForYou() {
               </View>
             </View>
           </View>
-
-          
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>

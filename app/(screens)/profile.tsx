@@ -4,6 +4,9 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { ScrollView } from "react-native-gesture-handler";
 
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import HomeCard from "@/components/material/HomeCard";
+import ReplyCard from "@/components/material/ReplyCard";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 export default function Feeds() {
   return (
@@ -15,13 +18,13 @@ export default function Feeds() {
                 <View className="flex flex-col ">
                   <Image
                     className="w-32 h-32 rounded-full"
-                    source={require("@/assets/images/user-profile/user_profile.jpg")}
+                    source={require("@/assets/images/explore-profile/iryll.jpg")}
                   />
                   <Text className="mt-5 text-white text-lg text-center">
-                    Iryll Man Igga
+                    Iryll Mahn
                   </Text>
                   <Text className=" text-white font-light text-center">
-                    @mahmen
+                    @itsRealIryll
                   </Text>
                 </View>
 
@@ -50,24 +53,33 @@ export default function Feeds() {
 
 export function Home() {
     return (
-      <View className="flex-1 bg-[#171717]">
-        <Text>Home</Text>
-      </View>
+<SafeAreaProvider>
+    <SafeAreaView className="flex-1 bg-[#171717]">
+           <ScrollView className="p-5">
+           <HomeCard/>
+            </ScrollView> 
+    </SafeAreaView>
+</SafeAreaProvider>
     );
   }
 
 export function Replies() {
   return (
-    <View className="flex-1 bg-[#171717]">
-      <Text className="text-white">Replies</Text>
-    </View>
+<SafeAreaProvider>
+    <SafeAreaView className="flex-1 bg-[#171717]">
+           <ScrollView className="p-5">
+           <ReplyCard/>
+            </ScrollView> 
+    </SafeAreaView>
+</SafeAreaProvider>
   );
 }
 
 export function Bump() {
   return (
-    <View className="flex-1 bg-[#171717]">
-      <Text>Bump</Text>
+    <View className="flex-1 bg-[#171717] items-center justify-center">
+       <MaterialCommunityIcons name="heart-broken" size={20} color="#878787" />
+      <Text>No Bumps so Far</Text>
     </View>
   );
 }
