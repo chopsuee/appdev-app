@@ -33,7 +33,7 @@ function TopTabScreen() {
   );
 }
 
-function ForYou() {
+export function ForYou() {
   const [like, setLike] = useState("heart-outline");
 
   const toggleLike = () => {
