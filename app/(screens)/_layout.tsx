@@ -10,7 +10,7 @@ import NotificationScreen from "./notification";
 const BottomTab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 import { Platform } from "react-native";
-import ProfileScreen from "./profile";
+import Feeds from "./profile";
 
 function BottomTabScreen() {
   return (
@@ -112,7 +112,7 @@ function BottomTabScreen() {
 
       <BottomTab.Screen
         name="Profile"
-        component={ProfileScreen} // Showing the TopTabScreen component here
+        component={Feeds} // Showing the TopTabScreen component here
         options={{
           tabBarLabelStyle: {
             display: "none",

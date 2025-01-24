@@ -14,6 +14,7 @@ import Following from "./following";
 import { createStackNavigator } from "@react-navigation/stack";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { useState, useEffect } from "react";
+
 const TopTab = createMaterialTopTabNavigator();
 
 function TopTabScreen() {
