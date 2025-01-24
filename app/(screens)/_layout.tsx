@@ -55,7 +55,7 @@ function BottomTabScreen() {
       
           tabBarLabelStyle: { display: "none" },
           tabBarIcon: ({ color, size }) => (
-            <Icon name="bell" color={color} size={size} />
+            <Icon name="search" color={color} size={size} />
           ),
         }}
       />
@@ -80,7 +80,7 @@ function BottomTabScreen() {
       
           tabBarLabelStyle: { display: "none" },
           tabBarIcon: ({ color, size }) => (
-            <Icon name="bell" color={color} size={size} />
+            <Icon name="plus" color={color} size={size} />
           ),
         }}
       />
